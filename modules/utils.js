@@ -1,4 +1,4 @@
-import { DateTime } from 'luxon';
+import { DateTime } from '../node_modules/luxon/src/luxon.js';
 
 export const isValidInput = (input) => {
   if (input.trim() === '') return false;
