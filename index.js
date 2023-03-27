@@ -3,6 +3,7 @@ import BooksListUI from './modules/booksListUI.js';
 import { displayLiveDate } from './modules/utils.js';
 import setupNavigation from './modules/navigation.js';
 import setupFormHandler from './modules/formHandler.js';
+import './assets/css/index.css';
 
 document.addEventListener('DOMContentLoaded', () => {
   const bookList = new BookList();
