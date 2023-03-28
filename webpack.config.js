@@ -1,9 +1,14 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const path = require('path');
 
 module.exports = {
   mode: 'production',
   entry: './main.js',
+  output: {
+    path: path.resolve(__dirname, 'dist'),
+    publicPath: '',
+  },
   module: {
     rules: [
       {
@@ -23,4 +28,3 @@ module.exports = {
     }),
   ],
 };
-
